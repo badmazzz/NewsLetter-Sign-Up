@@ -1,5 +1,4 @@
 function isValidEmail(email) {
-    // Regular expression for basic email validation
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email);
 }
@@ -8,12 +7,9 @@ function subscribe() {
     const emailInput = document.getElementById('email');
     const resultMessage = document.getElementById('result');
     
-    // Get the entered email
     const email = emailInput.value.trim();
     
-    // Check if the email is valid
     if (isValidEmail(email)) {
-        // You can perform additional actions here, e.g., submitting the form
         let container = document.querySelector('.container');
         let container2 = document.querySelector('.container2');
         container.classList.add('hide');
