@@ -28,6 +28,7 @@ function subscribe() {
         let container = document.querySelector('.container');
         let container2 = document.querySelector('.container2');
         container.classList.remove('hide');
-        container2.classList.add('hide')
+        container2.classList.add('hide');
+        const emailInput = document.getElementById('email');
         emailInput.value = '';
     }
