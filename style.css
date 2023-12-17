@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: myfont;
+    src: url('assets/fonts/Roboto-Regular.ttf');
+}
+@font-face {
+    font-family: mybold;
+    src: url(assets/fonts/Roboto-Bold.ttf);
+}
+body{
+    font-size: 14px;    
+    font-family: myfont;
+    background-color: hsl(235, 18%, 26%);
+    /* margin: 5%; */
+}
+.container{
+    width: fit-content;
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: 1fr 0.65fr;
+    margin: auto;
+    margin-top: 8%;
+    border-radius: 25px;
+    background-color: white;
+}
+.text{
+    margin: auto;
+    margin-left: 40px;
+}
+.text h1{
+    font-weight: 700;
+    font-size: 46px;
+    margin-bottom: 10px;
+    color: hsl(234, 29%, 20%);
+}
+.text p{
+    padding-bottom: 30px;
+    color: hsl(231, 7%, 60%);
+}
+.text table{
+    /* border: 2px solid purple; */
+    padding-bottom: 30px;
+    color: hsl(231, 7%, 60%);
+}
+.text img{
+    margin-right: 10px;
+}
+.text input{
+    margin-top: 5px;
+    padding: 10px;
+    padding-right: 90px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 2px solid hsl(231, 7%, 60%);
+}
+.text input:invalid{
+    animation: shake;
+}
+.text button{
+    margin-top: 8px;
+    padding: 10px 48px;
+    font-weight: bold;
+    border-radius: 5px;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(234, 29%, 20%);
+    border: none;
+}
+.text button:active{
+    transform: scale(0.98);
+}
+.text button:hover{
+    background-color: hsl(4, 100%, 67%);
+    transition: .5s ease-in-out;
+}
+.mail{
+    font-weight: bold;
+    color: hsl(234, 29%, 20%)!important;
+    font-size: 12px;
+}
+#result{
+    animation: shake 0.2s ease-in-out 0s 2;
+    float: right;
+    margin-right: 60px;
+    color: rgba(255, 88, 88, 0.573);
+    font-weight: 100;
+}
+.image img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    height: 450px;
+    padding-left: 30px;
+}
+.image{
+    display: inline-flex;
+    width: fit-content;
+    /* margin-left: 20px; */
+}
+.image2{
+    display: none;
+}
+.container2{
+    background-color: white;
+    display: block;
+    max-width: 300px;
+    padding: 40px;
+    margin: auto;
+    margin-top: 10%;
+    border-radius: 25px;
+    color: hsl(231, 7%, 60%);
+}
+.container2 h1{
+    font-size: 40px;
+    padding: 15px 0px;
+    color: hsl(234, 29%, 20%);
+}
+.btn{
+    margin: auto;
+    margin-top: 7%;
+    font-weight: bold;
+    border-radius: 5px;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(234, 29%, 20%);
+    border: none;
+    width: 100%;
+    padding: 10px 70px;
+}
+.btn:active {
+    transform: scale(0.98);
+}
+.btn:hover{
+    background: linear-gradient(to right, rgb(252, 92, 118),hsl(4, 100%, 67%));
+    transition: 2s ease-in-out;
+}
+.hide {
+    display: none;
+}
+#success{
+    color: hsl(235, 18%, 26%) !important;
+}
+@keyframes shake {
+    0% {
+        margin-left: 0rem;
+    }
+
+    25% {
+        margin-left: 0.5rem;
+    }
+
+    75% {
+        margin-left: -0.5rem;
+    }
+    100% {
+        margin-left: 0rem;
+    }
+}
+@media only screen and (max-width: 375px) {
+    body {
+        background-color: white;
+    }
+    .image{
+        content: url(assets/images/illustration-sign-up-mobile.svg);
+    }
+    .container{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        border-radius: 0;
+        border: none;
+        width: fit-content;
+    }
+    .hide {
+        display: none;
+    }
+    .text input{
+        padding: 10px;
+        padding-right: 144px;
+    }
+    
+}
