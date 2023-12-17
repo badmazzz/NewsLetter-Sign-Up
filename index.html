@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Newsletter sign-up form with success message</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+
+  <!-- Sign-up form start -->
+  <div class="container " id="container">
+    <div class="text">
+      <h1>Stay updated!</h1>
+      <p>Join 60,000+ product managers receiving monthly <br> updates on:</p>
+      <table>
+        <tr>
+          <td><img src="assets/images/icon-list.svg" alt="" srcset=""></td>
+          <td>Product discovery and building what matters</td>
+        </tr>
+        <tr>
+          <td><img src="assets/images/icon-list.svg" alt="" srcset=""></td>
+          <td>Measuring to ensure updates are a success</td>
+        </tr>
+        <tr>
+          <td><img src="assets/images/icon-list.svg" alt="" srcset=""></td>
+          <td>And much more!</td>
+        </tr>
+      </table>
+
+      <p class="mail">Email Address <span id="result"></span><br>
+        <input type="email" placeholder="email@company.com" name="mail" id="email"> <br>
+        <button type="submit" onclick="subscribe()">Subscribe to monthly Newsletter</button>
+      </p>
+    </div>
+    <div class="image">
+      <img src="assets/images/illustration-sign-up-desktop.svg" alt="" srcset="">
+    </div>    
+    
+  </div>
+
+  
+
+  <!-- Sign-up form end -->
+
+  <!-- Success message start -->
+  <div class="container2 hide">
+    <img src="assets/images/icon-success.svg" alt="" srcset="">
+    <h1>Thanks for subscribing!</h1>
+    <p>A confirmation email has been sent to <b><span id="success"></span>.</b>
+    Please open it and click the button inside to confirm your subscription.</p>
+    <button type="submit" class="btn" onclick="dis()">Dismiss message</button>
+  </div>
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="www.linkedin.com/in/meshv-patel" target="_blank">Your Name Here</a>.
+  </div> -->
+</body>
+</html>
